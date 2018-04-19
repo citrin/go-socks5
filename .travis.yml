@@ -3,6 +3,9 @@ go:
   - "1.7.x"
   - "1.9.x"
   - "1.10.x"
+script:
+  - go vet ./...
+  - go test -v ./...
 notifications:
   email:
     on_success: never
